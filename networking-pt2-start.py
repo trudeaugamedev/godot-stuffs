@@ -46,7 +46,7 @@ while running:
 
     try:
         # Receive new messages from the server
-        data = sock.recv(1024)
+        data = sock.recv(4096)
     except socket.timeout:
 		# No data received in more than 0.01 seconds (setting at top of file), give up
         pass
